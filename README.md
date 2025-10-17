@@ -79,7 +79,7 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 - AC Enabled 
 - X-Boost Enabled 
 - DC (12V) Enabled 
-- Backup Reserve Enabled 
+- Backup Reserve Enabled
 
 *Sliders (numbers)*
 - Max Charge Level 
@@ -216,7 +216,7 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 
 </p></details>
 
-<details><summary> RIVER_2_PRO <i>(sensors: 30, switches: 3, sliders: 3, selects: 5)</i> </summary>
+<details><summary> RIVER_2_PRO <i>(sensors: 30, switches: 4, sliders: 4, selects: 5)</i> </summary>
 <p>
 
 *Sensors*
@@ -252,15 +252,16 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 - Status
 
 *Switches*
-- AC Enabled 
-- X-Boost Enabled 
-- DC (12V) Enabled 
+- AC Enabled
+- X-Boost Enabled
+- DC (12V) Enabled
+- Backup Reserve Enabled
 
 *Sliders (numbers)*
-- Max Charge Level 
-- Min Discharge Level 
-- AC Charging Power 
-
+- Max Charge Level
+- Min Discharge Level
+- AC Charging Power
+- Backup Reserve Level
 *Selects*
 - DC (12V) Charge Current 
 - DC Mode 
@@ -812,14 +813,15 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 
 </p></details>
 
-<details><summary> POWERSTREAM <i>(sensors: 57, switches: 0, sliders: 0, selects: 0)</i> </summary>
+<details><summary> POWERSTREAM <i>(sensors: 63, switches: 1, sliders: 0, selects: 1)</i> </summary>
 <p>
 
 *Sensors*
+- ESP Temperature
 - Solar 1 Watts
 - Solar 1 Input Potential
 - Solar 1 Op Potential
-- Solar 1 Currrent
+- Solar 1 Current
 - Solar 1 Temperature
 - Solar 1 Relay Status
 - Solar 1 Error Code  _(disabled)_
@@ -848,6 +850,7 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 - Battery Status  _(disabled)_
 - LLC Input Potential  _(disabled)_
 - LLC Op Potential  _(disabled)_
+- LLC Temperature
 - LLC Error Code  _(disabled)_
 - LLC Warning Code  _(disabled)_
 - LLC Status  _(disabled)_
@@ -856,7 +859,6 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 - Inverter Output Potential  _(disabled)_
 - Inverter Op Potential
 - Inverter Output Current
-- Inverter DC Current
 - Inverter Frequency
 - Inverter Temperature
 - Inverter Relay Status
@@ -872,13 +874,20 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 - Wireless Warning Code  _(disabled)_
 - LED Brightness  _(disabled)_
 - Heartbeat Frequency  _(disabled)_
+- PV1 Today Energy Total
+- PV2 Today Energy Total
+- From Battery Today Energy Total
+- To Battery Today Energy Total
+- To Smart Plugs Today Energy Total
 - Status
 
 *Switches*
+- Feed-in Control 
 
 *Sliders (numbers)*
 
 *Selects*
+- Power supply mode 
 
 </p></details>
 
@@ -1668,7 +1677,7 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 
 </p></details>
 
-<details><summary> RIVER 2 Pro (API) <i>(sensors: 30, switches: 3, sliders: 3, selects: 5)</i> </summary>
+<details><summary> RIVER 2 Pro (API) <i>(sensors: 30, switches: 4, sliders: 4, selects: 5)</i> </summary>
 <p>
 
 *Sensors*
@@ -1707,11 +1716,13 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 - AC Enabled 
 - X-Boost Enabled 
 - DC (12V) Enabled 
+- Backup Reserve Enabled
 
 *Sliders (numbers)*
 - Max Charge Level 
 - Min Discharge Level 
 - AC Charging Power 
+- Backup Reserve Level
 
 *Selects*
 - DC (12V) Charge Current 
@@ -2391,7 +2402,6 @@ Once installed, use Add Integration -> Ecoflow Cloud.
 - Economic Mode 
 
 </p></details>
-
 
 
 

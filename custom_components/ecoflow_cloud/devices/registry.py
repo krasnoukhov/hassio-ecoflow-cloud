@@ -2,6 +2,7 @@ from typing import Type, OrderedDict
 
 from .internal import (
     delta2 as internal_delta2,
+    delta3 as internal_delta3,
     river2 as internal_river2,
     river2_max as internal_river2_max,
     river2_pro as internal_river2_pro,
@@ -20,8 +21,10 @@ from .internal import (
 )
 from .public import (
     delta_pro as public_delta_pro,
+    delta_pro_ultra as public_delta_pro_ultra,
     delta2 as public_delta2,
     delta2_max as public_delta2_max,
+    delta3 as public_delta3,
     river_pro as public_river_pro,
     river2 as public_river2,
     river2_max as public_river2_max,
@@ -42,6 +45,7 @@ from ..devices import BaseDevice, DiagnosticDevice
 devices: OrderedDict[str, Type[BaseDevice]] = OrderedDict[str, Type[BaseDevice]](
     {
         "DELTA_2": internal_delta2.Delta2,
+        "DELTA_3": internal_delta3.Delta3,
         "RIVER_2": internal_river2.River2,
         "RIVER_2_MAX": internal_river2_max.River2Max,
         "RIVER_2_PRO": internal_river2_pro.River2Pro,
@@ -69,8 +73,10 @@ device_by_product: OrderedDict[str, Type[BaseDevice]] = OrderedDict[
     {
         "DELTA Max": public_delta_max.DeltaMax,
         "DELTA Pro": public_delta_pro.DeltaPro,
+        "DELTA Pro Ultra": public_delta_pro_ultra.DeltaProUltra,
         "DELTA 2": public_delta2.Delta2,
         "DELTA 2 Max": public_delta2_max.Delta2Max,
+        "DELTA 3": public_delta3.Delta3,
         "RIVER Pro": public_river_pro.RiverPro,
         "RIVER 2": public_river2.River2,
         "RIVER 2 Max": public_river2_max.River2Max,
